@@ -32,13 +32,25 @@ except:
 
 """
 
-numero_str = input('dobrar o nemero que foi digitado: ')
+numero_str = input('dobrar o numero que foi digitado: ')
 
 
 try:  #tenar verificar codigo correto
     numero_float = float(numero_str)  #string no input acima  convertida ára numero flutiante
     print('FLOAT:', numero_float) 
     print(f'O dobro de {numero_str} é {numero_float * 2:.2f}')
-except:  #se caso estiver com erro pula oara exeção(aviso do erro)
+except:  #se caso estiver com erro pula para exeção(aviso do erro)
     print('Isso não é um número')
+
+
+try:
+    a = int(input("Digite o número A: "))
+    b = int(input("Digite o número B: "))
+    resultado = a / b
+    print(f'Resultado:, {resultado:.2f}')
+except ValueError: #trata erro de valor, caso o usuario digite algo que não seja numero
+    print("Você digitou algo que não é número.")
+except ZeroDivisionError: #trata erro de divisão por zero
+    print("Não é possível dividir por zero.")
+
 
