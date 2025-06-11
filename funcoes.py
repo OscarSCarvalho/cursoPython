@@ -1,14 +1,34 @@
+'''def print():
+    print('Varrias1')
+    print('Varrias2')
+    print('Varrias3')
+    print('Varrias4')
+    
+'''
 
-def imprimir():   #função criada, com algumas coisas dentro da funçao, toda vez que chama-la tudo oque estive nela retorna 
-    print('Ola')
-    print('Tudo ')
-    print('Bem')
+'''def imprimir(a, b, c):
+    print(a, b, c)
+    
 
-imprimir()  # Chama a função uma vez
+imprimir(1, 2, 3)
+
+'''
+'''def saudacao(nome='sem nome'): # Define a função saudacao com um parâmetro nome, que tem um valor padrão 'sem nome'caso eu não asse nenhnhum valor na funçao votara sem nome 
+    print(f'Olá, {nome}! Seja bem-vindo(a)!') # Exibe uma saudação personalizada
 
 
-def saudacao(nome= 'Oscar'): #dentro dessa função() posso passra alguns parametos (arguentos) tambem
-    print(f'Ola, {nome}')  #nome dentro de varieavel nome formatada 
+saudacao('Oscar') # Chamadas da função saudaccao com diferentes nomes
+saudacao('Maria')
+saudacao('João')
+saudacao()
+saudacao('Ana') # Chamada da função saudacao com o nome 'Ana'  '''
 
-
-saudacao()    
+def multiplo_de(numero, multiplo):
+    resultado = numero % multiplo == 0
+    print(f'{numero} é múltiplo de {multiplo}?', end=' ')
+    print(resultado)
+ 
+ 
+multiplo_de(16, 8)
+multiplo_de(15, 3)
+multiplo_de(10, 2)
